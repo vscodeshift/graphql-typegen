@@ -1,14 +1,26 @@
 import * as vscode from 'vscode'
 import applyTransform from '@vscodeshift/apply-jscodeshift'
-
-const transform = (): string | void | null | undefined => {
-  // REPLACE ME
-}
+import { FileInfo, API, Options } from 'jscodeshift'
 
 export function activate(context: vscode.ExtensionContext): void {
   const disposable = vscode.commands.registerCommand(
-    'extension.YOUR.COMMAND.HERE',
-    () => applyTransform(transform)
+    'extension.graphql-typegen',
+    () => {
+      const graphqlTypegenAsync = require('graphql-typegen/graphql-typegen-async')
+      applyTransform(
+        (
+          fileInfo: FileInfo,
+          api: API,
+          {
+            /* eslint-disable @typescript-eslint/no-unused-vars */
+            selectionStart,
+            selectionEnd,
+            /* eslint-enable @typescript-eslint/no-unused-vars */
+            ...options
+          }: Options
+        ) => graphqlTypegenAsync(fileInfo, api, options)
+      )
+    }
   )
 
   context.subscriptions.push(disposable)
