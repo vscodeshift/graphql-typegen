@@ -5,9 +5,9 @@ import { FileInfo, API, Options } from 'jscodeshift'
 export function activate(context: vscode.ExtensionContext): void {
   const disposable = vscode.commands.registerCommand(
     'extension.graphql-typegen',
-    () => {
+    async () => {
       const graphqlTypegenAsync = require('graphql-typegen/graphql-typegen-async')
-      applyTransform(
+      await applyTransform(
         (
           fileInfo: FileInfo,
           api: API,
