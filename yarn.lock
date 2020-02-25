@@ -4241,9 +4241,9 @@ graphql-tag@^2.10.1:
   integrity sha512-4FOv3ZKfA4WdOKJeHdz6B3F/vxBLSgmBcGeAFPf4n1F64ltJUvOOerNj0rsJxONQGdhUMynQIvd6LzB+1J5oKA==
 
 graphql-typegen@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/graphql-typegen/-/graphql-typegen-1.1.0.tgz#05641f21eb1036802d3876d61e2b8da0158c7ab5"
-  integrity sha512-E84qSRTh1/BmMNOJBjXoe/6cCCoadzqiC+1MJiu/AEPkspEQxaheSQJMYr4NPMwXWp0rj3Qcs1F/xHrrszs9Jg==
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/graphql-typegen/-/graphql-typegen-1.2.0.tgz#a7238295217d3f7a78e16e9d40ddbe952a24d2ca"
+  integrity sha512-uWDo6VY3fz6bdAdfwqu/5NVTkRpg7VzhAeFksBi9RYCeS4Gy0g1yU2p7KDP//ckLX8ByP8pXRJNGR/jZV1U6SA==
   dependencies:
     "@babel/runtime" "^7.1.5"
     fs-extra "^8.1.0"
