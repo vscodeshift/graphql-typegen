@@ -167,7 +167,7 @@
   "dependencies": {
     "@babel/runtime": "^7.1.5",
     "@vscodeshift/apply-jscodeshift": "^1.0.12",
-    "graphql-typegen": "^1.2.2",
+    "graphql-typegen": "^1.2.3",
     "jscodeshift": "^0.7.0"
   },
   "renovate": {
