@@ -35,7 +35,7 @@
     "pretest": "BABEL_ENV=coverage npm run build",
     "test": "rimraf .nyc_output; node ./out/test/runTest.js && nyc report && nyc report --reporter=lcov",
     "codecov": "nyc report --reporter=text-lcov > coverage.lcov; codecov",
-    "vscode:prepublish": "npm run clean && npm run prettier:check && npm run lint && npm test && npm run build",
+    "vscode:prepublish": "npm run clean && npm run lint && npm test && npm run build",
     "open:coverage": "open coverage/lcov-report/index.html",
     "semantic-release": "semantic-release"
   },
